@@ -20,7 +20,7 @@ def get_data():
 # Kubernetes route (something playful)
 @app.route('/k8s', methods=['GET'])
 def kubernetes_playful():
-    message = 'Welcome to the world of Kubernetes!'
+    message = 'Welcome to the world of Docker!'
     return message
 
 if __name__ == '__main__':
