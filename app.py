@@ -18,10 +18,10 @@ def get_data():
     return jsonify(data)
 
 # Kubernetes route (something playful)
-@app.route('/k8s', methods=['GET'])
+@app.route('/docker', methods=['GET'])
 def kubernetes_playful():
     message = 'Welcome to the world of Docker!'
     return message
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5002)
