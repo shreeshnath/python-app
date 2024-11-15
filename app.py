@@ -23,9 +23,15 @@ def kubernetes_playful():
     message = 'Welcome to the world of Docker!'
     return message
 
+<<<<<<< HEAD
 @app.route('/somethings', methods=['GET'])
 def kubernetes_playful():
     message = 'somethings are better than nothing!'
+=======
+@app.route('/something', methods=['GET'])
+def something_playful():
+    message = 'Something is better than nothing.! LOL! '
+>>>>>>> 9d775e6716e44901dc02df6bd2012906686cc7da
     return message
 
 if __name__ == '__main__':
