@@ -24,7 +24,7 @@ def kubernetes_playful():
     return message
 
 @app.route('/something', methods=['GET'])
-def kubernetes_playful():
+def something_playful():
     message = 'Something is better than nothing.! LOL! '
     return message
 
