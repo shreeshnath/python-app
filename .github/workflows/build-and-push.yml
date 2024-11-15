@@ -22,4 +22,4 @@ jobs:
         uses: docker/build-push-action@v3  # Update version as needed
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/your-app-name:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/python-flask-demo:latest
