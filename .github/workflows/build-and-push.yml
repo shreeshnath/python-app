@@ -22,8 +22,4 @@ jobs:
         run: docker tag python-app:latest ${{ secrets.DOCKERHUB_USERNAME }}/python-flask-demo:${{ github.sha }}
 
       - name: Push the Docker Image
-        uses: docker/build-push-action@v3
-        with:
-          push: false
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/python-flask-demo:${{ github.sha }}
-          platforms: linux/amd64
+        run: ${{ secrets.DOCKERHUB_USERNAME }}/python-flask-demo:${GITHUB_SHA}
