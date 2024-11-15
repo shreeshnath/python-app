@@ -23,5 +23,10 @@ def kubernetes_playful():
     message = 'Welcome to the world of Docker!'
     return message
 
+@app.route('/somethings', methods=['GET'])
+def kubernetes_playful():
+    message = 'somethings are better than nothing!'
+    return message
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5002)
