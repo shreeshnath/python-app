@@ -18,7 +18,7 @@ def get_data():
     return jsonify(data)
 
 # Kubernetes route (something playful)
-@app.route('/k8s', methods=['GET'])
+@app.route('/docker', methods=['GET'])
 def kubernetes_playful():
     message = 'Welcome to the world of Docker!'
     return message
